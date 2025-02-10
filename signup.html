@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Create Account</h2>
+        <div class="form-switch">
+            <a href="index.html">Already have an account? Login</a>
+        </div>
+        <form id="signupForm" onsubmit="return registerUser(event)">
+            <div class="input-group">
+                <input type="text" required name="fullName">
+                <label>Full Name</label>
+            </div>
+            <div class="input-group">
+                <input type="email" required name="email">
+                <label>Email</label>
+            </div>
+            <div class="input-group">
+                <input type="password" required name="password">
+                <label>Password</label>
+            </div>
+            <div class="input-group">
+                <input type="password" required name="confirmPassword">
+                <label>Confirm Password</label>
+            </div>
+            <button type="submit" class="login-btn">Sign Up</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        window.onload = checkLoginStatus;
+    </script>
+</body>
+</html> 
