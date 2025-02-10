@@ -8,10 +8,8 @@
 </head>
 <body>
     <div class="login-container">
-        <h2>Create Account</h2>
-        <div class="form-switch">
-            <a href="index.html">Already have an account? Login</a>
-        </div>
+        <h2>Signup</h2>
+
         <form id="signupForm" onsubmit="return registerUser(event)">
             <div class="input-group">
                 <input type="text" required name="fullName">
@@ -31,6 +29,12 @@
             </div>
             <button type="submit" class="login-btn">Sign Up</button>
         </form>
+        <div class="forgot-password">
+            <p>
+                Already have an account?
+                <a href="index.html">Login</a>
+            </p>
+        </div>
     </div>
     <script src="script.js"></script>
     <script>

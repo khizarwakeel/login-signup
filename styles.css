@@ -13,6 +13,7 @@ body {
     background: linear-gradient(120deg, #2980b9, #8e44ad);
 }
 
+/* Login Container */
 .login-container {
     background: white;
     padding: 40px;
@@ -109,13 +110,25 @@ body {
 }
 
 /* Dashboard Styles */
+.dashboard {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 .navbar {
     background: white;
     padding: 1rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .navbar h1 {
@@ -130,6 +143,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
     font-size: 14px;
+    transition: background 0.3s;
 }
 
 .logout-btn:hover {
@@ -138,11 +152,11 @@ body {
 
 .dashboard-container {
     max-width: 800px;
-    margin: 2rem auto;
+    margin: 6rem auto 2rem; /* Adjusted margin to account for the fixed navbar */
     padding: 2rem;
     background: white;
     border-radius: 10px;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
 
 .user-info {
@@ -164,4 +178,4 @@ body {
 .info-item strong {
     color: #2980b9;
     margin-right: 10px;
-} 
+}
